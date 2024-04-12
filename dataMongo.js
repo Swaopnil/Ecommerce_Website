@@ -31,7 +31,13 @@ const PORT = process.env.PORT || 3002;  // Use port from environment variable or
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
-
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
+app.get('/index.css', (req, res) => {
+    res.setHeader('Content-Type', 'text/css');
+    res.sendFile(__dirname + '/index.css');
+});
 app.get('/product1', (req, res) => {
     res.sendFile(__dirname + '/Product1.html');
 });
