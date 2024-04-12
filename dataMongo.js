@@ -39,28 +39,52 @@ app.get('/index.css', (req, res) => {
     res.sendFile(__dirname + '/index.css');
 });
 app.get('/product1', (req, res) => {
-    res.sendFile(__dirname + '/Product1.html');
+    res.set({
+        "Allow-access-Allow-Origin": '*'
+    });
+    return res.redirect('Product1.html');
 });
 app.get('/product2', (req, res) => {
-    res.sendFile(__dirname + '/Product2.html');
+    res.set({
+        "Allow-access-Allow-Origin": '*'
+    });
+    return res.redirect('Product2.html');
 });
 app.get('/product3', (req, res) => {
-    res.sendFile(__dirname + '/Product3.html');
+    res.set({
+        "Allow-access-Allow-Origin": '*'
+    });
+    return res.redirect('Product3.html');
 });
 app.get('/product4', (req, res) => {
-    res.sendFile(__dirname + '/Product4.html');
+    res.set({
+        "Allow-access-Allow-Origin": '*'
+    });
+    return res.redirect('Product4.html');
 });
 app.get('/product5', (req, res) => {
-    res.sendFile(__dirname + '/Product5.html');
+    res.set({
+        "Allow-access-Allow-Origin": '*'
+    });
+    return res.redirect('Product5.html');
 });
 app.get('/product6', (req, res) => {
-    res.sendFile(__dirname + '/Product6.html');
+    res.set({
+        "Allow-access-Allow-Origin": '*'
+    });
+    return res.redirect('Product6.html');
 });
 app.get('/product7', (req, res) => {
-    res.sendFile(__dirname + '/Product7.html');
+    res.set({
+        "Allow-access-Allow-Origin": '*'
+    });
+    return res.redirect('Product7.html');
 });
 app.get('/product8', (req, res) => {
-    res.sendFile(__dirname + '/Product8.html');
+    res.set({
+        "Allow-access-Allow-Origin": '*'
+    });
+    return res.redirect('Product8.html');
 });
 app.get('/Orders', async (req, res) => {
     try {
