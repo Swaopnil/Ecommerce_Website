@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beige Short Skirt</title>
+    <link href="product.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="full_page" >
+        <div class="top">
+            <a href="/" class="Home">HOME</a>
+            <a href="/Orders" class="Cart">CART</a>
+        </div>
+        <div class="image">
+            <img src="../photos/short-skirt.jpg">
+        </div>
+        <div class="details">
+            <h2 class="name">Beige Short Skirt</h2>
+            <p class="price">$ 49</p>
+            <p>PRODUCT DETAILS 
+                Beige solid high-waist mini skorts, has an invisible side zip fastening and straight hem
+                
+                Size & Fit
+                The model (height 5'8") is wearing a size 26
+                
+                
+                Material & Care
+                95% Polyester & 5% Spandex
+                Hand Wash</p>
+            <form id="productForm" action="/cart" method="post">
+                <input type="hidden" name="name" value="Beige Short Skirt">
+                <input type="hidden" name="price" value="49">
+                <input id="quantityInput"  name="quantity" value="1">
+                  </div>
+                <button id="button1" type="submit">Buy</button>
+            </form>
+        </div>
+    </div>
+    <script src="../dataMongo.js"></script>
+
+</body>
+</html>

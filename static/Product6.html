@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Pink Trousers</title>
+    <link href="product.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="full_page" >
+        <div class="top">
+            <a href="/" class="Home">HOME</a>
+            <a href="/Orders" class="Cart">CART</a>
+        </div>
+        <div class="image">
+            <img src="../photos/pink-trouser.jpg">
+        </div>
+        <div class="details">
+            <h2 class="name">Stylish Pink Trousers</h2>
+            <p class="price">$ 89</p>
+            <p>Introducing these stylish Van Heusen pink trousers, tailored for elegant women who demand comfort and sophistication. Featuring a trendy check pattern and pleated front, these trousers will add sophistication to your formal wardrobe. Made from a blend of polyester, spandex, and viscose, they offer a regular fit, ensuring ease of movement. A versatile piece that adds a touch of femininity to your wardrobe, get ready to make a flawless statement that lasts.</p>
+            <form id="productForm" action="/cart" method="post">
+                <input type="hidden" name="name" value="Stylish Pink Trousers">
+                <input type="hidden" name="price" value="89">
+                <input id="quantityInput"  name="quantity" value="1">
+                  </div>
+                <button id="button1" type="submit">Buy</button>
+            </form>
+        </div>
+    </div>
+    <script src="../dataMongo.js"></script>
+
+</body>
+</html>

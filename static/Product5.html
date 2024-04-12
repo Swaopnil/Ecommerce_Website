@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Leather Jacket</title>
+    <link href="product.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="full_page" >
+        <div class="top">
+            <a href="/" class="Home">HOME</a>
+            <a href="/Orders" class="Cart">CART</a>
+        </div>
+        <div class="image">
+            <img src="../photos/Black-leather-jacket.jpg">
+        </div>
+        <div class="details">
+            <h2 class="name">Black Leather Jacket</h2>
+            <p class="price">$ 129</p>
+            <p>Black leather jacket is incredibly popular among men for several reasons, making it a timeless and favored choice in fashion: Classic Appeal: Black is a classic and neutral color that never goes out of style. It raidates sophistication and elegance, making it suitable for various occasions and outfits.</p>
+            <form id="productForm" action="/cart" method="post">
+                <input type="hidden" name="name" value="Black Leather Jacket">
+                <input type="hidden" name="price" value="129">
+                <input id="quantityInput"  name="quantity" value="1">
+                  </div>
+                <button id="button1" type="submit">Buy</button>
+            </form>
+        </div>
+    </div>
+    <script src="../dataMongo.js"></script>
+
+</body>
+</html>

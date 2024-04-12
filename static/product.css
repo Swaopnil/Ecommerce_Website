@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+
+.full_page {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.Home, .Cart {
+  border: 2px solid #8785A2;
+  padding: 10px 20px;
+  border-radius: 19px;
+  color: #8785A2;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Home:hover, .Cart:hover {
+  background-color: #8785A2;
+  color: #f6f6f6;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.details {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #555555;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.quantity-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.value-button {
+  border: 1px solid #ddd;
+  background-color: #eee;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.value-button:hover {
+  background-color: #ddd;
+}
+
+.number {
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  width: 60px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#button1 {
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#button1:hover {
+  background-color: #ff5252;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfy Gray Pant</title>
+    <link href="product.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="full_page" >
+        <div class="top">
+            <a href="/" class="Home">HOME</a>
+            <a href="/Orders" class="Cart">CART</a>
+        </div>
+        <div class="image">
+            <img src="../photos/grey-pant.jpg">
+        </div>
+        <div class="details">
+            <h2 class="name">Comfy Gray Pant</h2>
+            <p class="price">$ 49</p>
+            <p>Cargo trousers in cotton canvas. Low waist with covered elastication at the sides and back and a zip fly with a press-stud. Diagonal side pockets, each with an additional, small flap pocket on the front. Straight legs with sewn-in creases at the front and back.</p>
+            <form id="productForm" action="/cart" method="post">
+                <input type="hidden" name="name" value="Comfy Gray Pant">
+                <input type="hidden" name="price" value="49">
+                <input id="quantityInput"  name="quantity" value="1">
+                  </div>
+                <button id="button1" type="submit">Buy</button>
+            </form>
+        </div>
+    </div>
+    <script src="../dataMongo.js"></script>
+
+</body>
+</html>

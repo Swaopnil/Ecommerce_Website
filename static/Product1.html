@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White T-shirt</title>
+    <link href="product.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="full_page" >
+        <div class="top">
+            <a href="/" class="Home">HOME</a>
+            <a href="/Orders" class="Cart">CART</a>
+        </div>
+        <div class="image">
+            <img src="../photos/white-shirt.jpg">
+        </div>
+        <div class="details">
+            <h2 class="name">White T-shirt</h2>
+            <p class="price">$ 1000</p>
+            <p>Description. White cotton t-shirt made from a crisp, medium-weight 100% cotton and designed for a tailored, yet comfortable fit. The classic neck rib includes a touch of lycra to retain its shape over time.
+                The sense of seduction here is subdued, but undeniable. Once more, the white shirt is both free spirited and bohemian as well as rigid and proper
+            </p>
+            <form id="productForm" action="/cart" method="post">
+                <input type="hidden" name="name" value="White T-shirt">
+                <input type="hidden" name="price" value="30">
+                <input id="quantityInput"  name="quantity" value="1">
+
+                  </div>
+                <button id="button1" type="submit">Buy</button>
+            </form>
+        </div>
+    </div>
+    <script src="../dataMongo.js"></script>
+    
+</body>
+</html>

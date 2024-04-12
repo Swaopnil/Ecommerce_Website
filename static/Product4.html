@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Knitted Top</title>
+    <link href="product.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="full_page" >
+        <div class="top">
+            <a href="/" class="Home">HOME</a>
+            <a href="/Orders" class="Cart">CART</a>
+        </div>
+        <div class="image">
+            <img src="../photos/basic-kintted-top.jpg">
+        </div>
+        <div class="details">
+            <h2 class="name">Basic Knitted Top</h2>
+            <p class="price">$ 29</p>
+            <p>PRODUCT DETAILS 
+                White crop fitted top
+                Self design
+                Scoop neck, long, regular sleeves
+                Knitted polyester fabric
+                
+                Size & Fit
+                The model (height 5'8) is wearing a size S
+                
+                Material & Care
+                95% Polyester, 5% Spandex
+                Hand wash only</p>
+            <form id="productForm" action="/cart" method="post">
+                <input type="hidden" name="name" value="Basic Knitted Top">
+                <input type="hidden" name="price" value="29">
+                <input id="quantityInput"  name="quantity" value="1">
+                  </div>
+                <button id="button1" type="submit">Buy</button>
+            </form>
+        </div>
+    </div>
+    <script src="../dataMongo.js"></script>
+
+</body>
+</html>
