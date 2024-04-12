@@ -26,8 +26,10 @@ var db = mongoose.connection;
 db.on("error", () => console.log("Error in connecting to database"));
 db.once("open", () => console.log("Connected to database"));
 
-app.listen(3002, () => {
-    console.log('Server is running on port 3002');
+const PORT = process.env.PORT || 3002;  // Use port from environment variable or default to 3002
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
 
 app.get('/', (req, res) => {
